@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Imperial+Script&family=Syncopate:wght@400;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --black: #080807;
+  --white: #f2ede6;
+  --cream: #d9d0c0;
+  --gold: #FF6B00;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+  cursor: none;
+}
