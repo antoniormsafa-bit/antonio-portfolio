@@ -1,6 +1,6 @@
 [build]
-  command = "pnpm install --no-frozen-lockfile && pnpm --filter @workspace/antonio-portfolio run build"
-  publish = "artifacts/antonio-portfolio/dist/public"
+  command = "pnpm install --no-frozen-lockfile && ./node_modules/.bin/vite build"
+  publish = "dist/public"
   base = "."
 
 [build.environment]
