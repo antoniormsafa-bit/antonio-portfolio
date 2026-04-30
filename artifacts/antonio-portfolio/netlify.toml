@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g pnpm@10 && pnpm install --frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/antonio-portfolio run build"
+  command = "npm install -g pnpm@10 && pnpm install --no-frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/antonio-portfolio run build"
   publish = "artifacts/antonio-portfolio/dist/public"
   base = "."
 
