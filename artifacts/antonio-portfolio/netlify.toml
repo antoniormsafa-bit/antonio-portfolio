@@ -1,0 +1,12 @@
+[build]
+  command = "npm install -g pnpm@10 && pnpm install --frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/antonio-portfolio run build"
+  publish = "artifacts/antonio-portfolio/dist/public"
+  base = "."
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
