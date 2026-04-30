@@ -1,7 +1,10 @@
 [build]
-  command = "npm install -g pnpm && pnpm install && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/antonio-portfolio run build"
+  command = "corepack enable && corepack prepare pnpm@latest --activate && pnpm install --no-frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/antonio-portfolio run build"
   publish = "artifacts/antonio-portfolio/dist/public"
   base = "."
+
+[build.environment]
+  NODE_VERSION = "22"
 
 [[redirects]]
   from = "/*"
