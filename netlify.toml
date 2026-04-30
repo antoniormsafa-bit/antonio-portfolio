@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install --no-frozen-lockfile && ./node_modules/.bin/vite build"
+  command = "pnpm install --no-frozen-lockfile && pnpm run build"
   publish = "dist/public"
   base = "."
 
